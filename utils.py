@@ -27,7 +27,7 @@ api_key = os.getenv("API_KEY")
 client = Groq(api_key=api_key)
 
 # Initialize the Groq model for LLM responses
-llm = ChatGroq(model="llama-3.1-70b-versatile", api_key=api_key, max_tokens=500)  # Limit tokens to 100
+llm = ChatGroq(model="llama-3.3-70b-versatile", api_key=api_key, max_tokens=500)  # Limit tokens to 100
 
 def audio_bytes_to_wav(audio_bytes):
     try:
